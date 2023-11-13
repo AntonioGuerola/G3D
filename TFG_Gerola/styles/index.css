@@ -16,8 +16,8 @@ footer{
 }
 
 #botonCarrito{
-    color: #FFFF00;
-    background-color: #000080;
+    color: #000080;
+    background-color: #FFFF00;
 }
 
 #barraNavegacion{
@@ -27,4 +27,9 @@ footer{
 #botonBusqueda{
     color: #FFFF00;
     background-color: #000080;
+}
+
+#descripcionProducto{
+    background-color: white;
+    font-size: medium;
 }
