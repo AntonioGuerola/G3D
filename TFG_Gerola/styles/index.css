@@ -1,0 +1,30 @@
+#body{
+    background-color: #000080;
+}
+
+.container-fluid{
+    justify-content: normal !important;
+    flex-wrap: wrap;
+}
+
+.secciones{
+    flex-direction: column;
+}
+
+footer{
+    margin-top: 3%;
+}
+
+#botonCarrito{
+    color: #FFFF00;
+    background-color: #000080;
+}
+
+#barraNavegacion{
+    background-color: #FFFF00;
+}
+
+#botonBusqueda{
+    color: #FFFF00;
+    background-color: #000080;
+}
