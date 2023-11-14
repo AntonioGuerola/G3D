@@ -41,7 +41,19 @@ footer{
 
 #descripcionProductoMovil{
     background-color: white;
-    font-size: x-small;
+    font-size: xx-small;
+}
+
+#añadirCarritoEscritorio{
+    font-size: medium;
+}
+
+#añadirCarritoTablet{
+    font-size: small;
+}
+
+#añadirCarritoMovil{
+    font-size: xx-small;
 }
 
 #ventanaModal{
