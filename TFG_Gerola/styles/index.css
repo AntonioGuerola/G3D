@@ -29,7 +29,22 @@ footer{
     background-color: #000080;
 }
 
-#descripcionProducto{
+#descripcionProductoEscritorio{
+    background-color: white;
+    font-size: large;
+}
+
+#descripcionProductoTablet{
     background-color: white;
     font-size: medium;
+}
+
+#descripcionProductoMovil{
+    background-color: white;
+    font-size: small;
+}
+
+#ventanaModal{
+    background-color: #000080;
+    color: #FFFF00;
 }

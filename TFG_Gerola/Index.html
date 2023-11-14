@@ -91,14 +91,24 @@
   </div>
 
   <div class="row justify-content-around mx-auto mb-3 mt-5">
-    <div class="col-4 col-md-5 col-lg-3 mb-3 mb-md-4 d-flex flex-column align-items-center">
+    <div class="col-3 d-flex flex-column align-items-center">
       <!-- Button trigger modal -->
       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#model7" data-aos="zoom-in">
         <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
       </button>
 
-      <div class="d-none d-lg-block" data-aos="zoom-in">
-        <p id="descripcionProducto" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man (Clásico)</b>
+      <div class="d-lg-block d-md-none" data-aos="zoom-in">
+        <p id="descripcionProductoEscritorio" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-lg-none d-md-block d-sm-none" data-aos="zoom-in">
+        <p id="descripcionProductoTablet" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-sm-block d-md-none d-lg-none" data-aos="zoom-in">
+        <p id="descripcionProductoMovil" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man (Clásico)</b>
         </p>
       </div>
 
@@ -109,13 +119,12 @@
       <!-- Modal -->
       <div class="modal fade" id="model7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content" id="ventanaModal">
             <div id="ventana_modal_titulo_01" class="modal-header">
-              <h5 class="modal-title text-white" id="exampleModalLabel">Premio de Medicina</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Soporte para teléfonos de Spider-Man (Clásico)</h5>
               <button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div id="ventana_modal_foto_01" class="modal-body">
-              <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
               <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
             </div>
           </div>
@@ -123,76 +132,86 @@
       </div>
     </div>
 
-    <div class="col-4 col-md-5 col-lg-3 text-center mb-3 mb-md-4">
+    <div class="col-3 d-flex flex-column align-items-center">
       <!-- Button trigger modal -->
-      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#model8" data-aos="zoom-in">
-        <img class="img-fluid rounded-5" src="images/impresion_inazuma.png" alt="">
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#model7" data-aos="zoom-in">
+        <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
       </button>
 
-      <div class="d-none d-md-block d-lg-none mt-md-3">
-        <p id="descripcion_trabajos">
-          Modelos Low Poly de algunos de los personajes de la serie de animación y de videojuegos "Inazuma Eleven". Se
-          les dio un último acabado en Blender para su posterior impresión. Impreso, limado, pintado y barnizado.
+      <div class="d-lg-block d-md-none" data-aos="zoom-in">
+        <p id="descripcionProductoEscritorio" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man (Clásico)</b>
         </p>
       </div>
 
+      <div class="d-lg-none d-md-block d-sm-none" data-aos="zoom-in">
+        <p id="descripcionProductoTablet" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-sm-block d-md-none d-lg-none" data-aos="zoom-in">
+        <p id="descripcionProductoMovil" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man (Clásico)</b>
+        </p>
+      </div>
+
+      <button id="botonCarrito" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#" data-aos="zoom-in">
+        Añadir al carrito
+      </button>
+
       <!-- Modal -->
-      <div class="modal fade" id="model8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="model7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content" id="ventanaModal">
             <div id="ventana_modal_titulo_01" class="modal-header">
-              <h5 class="modal-title text-white" id="exampleModalLabel">Bustos de Inazuma Eleven</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Soporte para teléfonos de Spider-Man (Clásico)</h5>
               <button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div id="ventana_modal_foto_01" class="modal-body">
-              <img class="img-fluid rounded-5" src="images/impresion_inazuma.png" alt="">
-              <img class="img-fluid rounded-5" src="images/impresion_inazuma.png" alt="">
-              <img class="img-fluid rounded-5" src="images/impresion_inazuma.png" alt="">
-              <img class="img-fluid rounded-5" src="images/impresion_inazuma.png" alt="">
-            </div>
-            <div id="ventana_modal_descripcion_01" class="modal-footer justify-content-center d-md-none text-white">
-              <p>Modelos Low Poly de algunos de los personajes de la serie de animación y de videojuegos "Inazuma
-                Eleven". Se les dio un último acabado en Blender para su posterior impresión. Impreso, limado, pintado y
-                barnizado.</p>
+              <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="col-4 col-md-5 col-lg-3 text-center mb-3 mb-md-4">
+    <div class="col-3 d-flex flex-column align-items-center">
       <!-- Button trigger modal -->
-      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#model9" data-aos="zoom-in">
-        <img class="img-fluid rounded-5" src="images/impresion_casco_03.png" alt="">
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#model7" data-aos="zoom-in">
+        <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
       </button>
 
-      <div class="d-none d-md-block d-lg-none mt-md-3">
-        <p id="descripcion_trabajos">
-          Modelo del casco de Fernando Alonso, con base incluida. Impreso, limado, pintado y barnizado.
+      <div class="d-lg-block d-md-none" data-aos="zoom-in">
+        <p id="descripcionProductoEscritorio" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man (Clásico)</b>
         </p>
       </div>
 
+      <div class="d-lg-none d-md-block d-sm-none" data-aos="zoom-in">
+        <p id="descripcionProductoTablet" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-sm-block d-md-none d-lg-none" data-aos="zoom-in">
+        <p id="descripcionProductoMovil" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man (Clásico)</b>
+        </p>
+      </div>
+
+      <button id="botonCarrito" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#" data-aos="zoom-in">
+        Añadir al carrito
+      </button>
+
       <!-- Modal -->
-      <div class="modal fade" id="model9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="model7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+          <div class="modal-content" id="ventanaModal">
             <div id="ventana_modal_titulo_01" class="modal-header">
-              <h5 class="modal-title text-white" id="exampleModalLabel">Csaco de Fernando Alonso</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Soporte para teléfonos de Spider-Man (Clásico)</h5>
               <button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div id="ventana_modal_foto_01" class="modal-body">
-              <img class="img-fluid rounded-5" src="images/impresion_casco_03.png" alt="">
-              <img class="img-fluid rounded-5" src="images/impresion_casco_03.png" alt="">
-              <img class="img-fluid rounded-5" src="images/impresion_casco_03.png" alt="">
-            </div>
-            <div id="ventana_modal_descripcion_01" class="modal-footer justify-content-center d-md-none text-white">
-              <p>Modelo del casco de Fernando Alonso, con base incluida. Impreso, limado, pintado y barnizado.
-              </p>
+              <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
             </div>
           </div>
         </div>
       </div>
-
     </div>
 
   </div>
