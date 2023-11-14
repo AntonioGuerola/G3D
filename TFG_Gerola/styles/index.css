@@ -72,8 +72,7 @@ footer{
 }
 
 #boton_burguer{
-    background: red;
-    border: solid 2px black;
+    border: solid 2px #000080;
 }
 
 #burguer_01{
