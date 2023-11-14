@@ -60,3 +60,43 @@ footer{
     background-color: #000080;
     color: #FFFF00;
 }
+
+#navbar{
+    background: linear-gradient(to bottom, black, red, black);
+    height: 90px;
+}
+
+#text_navbar{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#text_menu{
+    margin:0px;
+}
+
+#boton_burguer{
+    background: red;
+    border: solid 2px black;
+}
+
+#burguer_01{
+    background: linear-gradient(to bottom, black, red);
+    color: white;
+}
+
+#burguer_02{
+    background: linear-gradient(to bottom, red, black);
+    color: white;
+}
+
+#titulo_burguer{
+    color: white;
+    font-size: 25px;
+}
+
+#link_burguer{
+    color: white;
+    font-size: 20px;
+}
