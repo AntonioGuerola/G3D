@@ -61,11 +61,6 @@ footer{
     color: #FFFF00;
 }
 
-#navbar{
-    background: linear-gradient(to bottom, black, red, black);
-    height: 90px;
-}
-
 #text_navbar{
     text-decoration: none;
     color: white;
@@ -82,12 +77,12 @@ footer{
 }
 
 #burguer_01{
-    background: linear-gradient(to bottom, black, red);
+    background-color: #FFFF00;
     color: white;
 }
 
 #burguer_02{
-    background: linear-gradient(to bottom, red, black);
+    background-color: #FFFF00;
     color: white;
 }
 

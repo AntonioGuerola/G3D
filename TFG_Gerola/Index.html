@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -15,47 +15,49 @@
 
 <body id="body">
 
-  <div class="navbar h-auto d-md-none">
-    <div class="col-12 px-0">
-      <nav id="navbar" class="navbar fixed-top mb-1">
-        <div class="container-fluid">
-          <a id="text_navbar" class="navbar-brand mx-auto ps-5" href="#">
-            <p id="text_menu">GUEROLA'S 3D</p>
-          </a>
-          <button id="boton_burguer" class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div id="burguer_01" class="offcanvas-header">
-              <h1 class="offcanvas-title" id="offcanvasNavbarLabel">Guerola's 3D</h1>
-              <button type="button" class="btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div id="burguer_02" class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a href="#Contacto" id="titulo_burguer" class="nav-link active">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a id="link_burguer" class="nav-link active"
-                    href="https://twitter.com/a_guerola02?t=jyP3PinUzXXG9KNNgMY_NQ&s=08">Twitter</a>
-                </li>
-                <li class="nav-item">
-                  <a id="link_burguer" class="nav-link active"
-                    href="https://instagram.com/guerolas_3d?igshid=YmMyMTA2M2Y=">Instagram</a>
-                </li>
-                <li class="nav-item">
-                  <a id="link_burguer" class="nav-link active" href="mailto:antonioguerolacrespo@gmail.com">Correo:
-                    antonioguerolacrespo@gmail.com</a>
-                </li>
-              </ul>
-            </div>
+  <nav class="navbar h-auto d-md-none" id="barraNavegacion">
+    <div class="container-fluid">
+      <div class="row justify-content-around">
+        <a class="navbar-brand col-5" href="index.html">
+          <img src="images/LogoG3DMedio.png" alt="" height="60">
+        </a>
+        <button id="boton_burguer col-2" class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand col-2" href="#">
+          <img src="images/carrito-de-compras.png" alt="" height="30">
+        </a>
+        <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div id="burguer_01" class="offcanvas-header">
+            <img src="images/LogoG3DMedio.png" alt="" height="60">
+            <button type="button" class="btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div id="burguer_02" class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a href="contacto.html" id="titulo_burguer" class="nav-link active">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a id="link_burguer" class="nav-link active"
+                  href="https://twitter.com/a_guerola02?t=jyP3PinUzXXG9KNNgMY_NQ&s=08">Twitter</a>
+              </li>
+              <li class="nav-item">
+                <a id="link_burguer" class="nav-link active"
+                  href="https://instagram.com/guerolas_3d?igshid=YmMyMTA2M2Y=">Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a id="link_burguer" class="nav-link active" href="mailto:antonioguerolacrespo@gmail.com">Correo:
+                  antonioguerolacrespo@gmail.com</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
-  </div>
+
+  </nav>
 
   <nav class="navbar h-auto d-none d-md-block" id="barraNavegacion">
     <div class="container-fluid">
@@ -84,7 +86,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
         </li>
       </ul>
       <a class="navbar-brand" href="#">
@@ -134,7 +136,7 @@
   </div>
 
   <div class="row justify-content-around mx-auto mb-3 mt-5">
-    <div class="col-3 d-flex flex-column align-items-center">
+    <div class="col-4 d-flex flex-column align-items-center">
       <!-- Button trigger modal -->
       <button type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#modal"
         data-aos="zoom-in">
@@ -200,7 +202,7 @@
       </div>
     </div>
 
-    <div class="col-3 d-flex flex-column align-items-center">
+    <div class="col-4 d-flex flex-column align-items-center">
       <!-- Button trigger modal -->
       <button type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#modal"
         data-aos="zoom-in">
@@ -235,8 +237,19 @@
         </p>
       </div>
 
-      <button id="botonCarrito" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#" data-aos="zoom-in">
-        <b>Añadir al carrito</b>
+      <button id="botonCarrito" type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoEscritorio">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal"
+        data-bs-target="#" data-aos="zoom-in">
+        <b id="añadirCarritoTablet">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoMovil">Añadir al carrito</b>
       </button>
 
       <!-- Modal -->
@@ -255,7 +268,7 @@
       </div>
     </div>
 
-    <div class="col-3 d-flex flex-column align-items-center">
+    <div class="col-4 d-flex flex-column align-items-center">
       <!-- Button trigger modal -->
       <button type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#modal"
         data-aos="zoom-in">
@@ -290,8 +303,415 @@
         </p>
       </div>
 
-      <button id="botonCarrito" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#" data-aos="zoom-in">
-        <b>Añadir al carrito</b>
+      <button id="botonCarrito" type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoEscritorio">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal"
+        data-bs-target="#" data-aos="zoom-in">
+        <b id="añadirCarritoTablet">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoMovil">Añadir al carrito</b>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" id="ventanaModal">
+            <div id="ventana_modal_titulo_01" class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Soporte para teléfonos de Spider-Man (Clásico)</h5>
+              <button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="ventana_modal_foto_01" class="modal-body">
+              <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column align-items-center">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-1" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <div class="d-none d-lg-block" data-aos="zoom-in">
+        <p id="descripcionProductoEscritorio" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-none d-md-block d-lg-none" data-aos="zoom-in">
+        <p id="descripcionProductoTablet" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-sm-block d-md-none" data-aos="zoom-in">
+        <p id="descripcionProductoMovil" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoEscritorio">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal"
+        data-bs-target="#" data-aos="zoom-in">
+        <b id="añadirCarritoTablet">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoMovil">Añadir al carrito</b>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" id="ventanaModal">
+            <div id="ventana_modal_titulo_01" class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Soporte para teléfonos de Spider-Man (Clásico)</h5>
+              <button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="ventana_modal_foto_01" class="modal-body">
+              <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column align-items-center">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-1" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <div class="d-none d-lg-block" data-aos="zoom-in">
+        <p id="descripcionProductoEscritorio" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-none d-md-block d-lg-none" data-aos="zoom-in">
+        <p id="descripcionProductoTablet" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-sm-block d-md-none" data-aos="zoom-in">
+        <p id="descripcionProductoMovil" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoEscritorio">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal"
+        data-bs-target="#" data-aos="zoom-in">
+        <b id="añadirCarritoTablet">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoMovil">Añadir al carrito</b>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" id="ventanaModal">
+            <div id="ventana_modal_titulo_01" class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Soporte para teléfonos de Spider-Man (Clásico)</h5>
+              <button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="ventana_modal_foto_01" class="modal-body">
+              <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column align-items-center">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-1" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <div class="d-none d-lg-block" data-aos="zoom-in">
+        <p id="descripcionProductoEscritorio" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-none d-md-block d-lg-none" data-aos="zoom-in">
+        <p id="descripcionProductoTablet" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-sm-block d-md-none" data-aos="zoom-in">
+        <p id="descripcionProductoMovil" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoEscritorio">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal"
+        data-bs-target="#" data-aos="zoom-in">
+        <b id="añadirCarritoTablet">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoMovil">Añadir al carrito</b>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" id="ventanaModal">
+            <div id="ventana_modal_titulo_01" class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Soporte para teléfonos de Spider-Man (Clásico)</h5>
+              <button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="ventana_modal_foto_01" class="modal-body">
+              <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column align-items-center">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-1" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <div class="d-none d-lg-block" data-aos="zoom-in">
+        <p id="descripcionProductoEscritorio" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-none d-md-block d-lg-none" data-aos="zoom-in">
+        <p id="descripcionProductoTablet" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-sm-block d-md-none" data-aos="zoom-in">
+        <p id="descripcionProductoMovil" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoEscritorio">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal"
+        data-bs-target="#" data-aos="zoom-in">
+        <b id="añadirCarritoTablet">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoMovil">Añadir al carrito</b>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" id="ventanaModal">
+            <div id="ventana_modal_titulo_01" class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Soporte para teléfonos de Spider-Man (Clásico)</h5>
+              <button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="ventana_modal_foto_01" class="modal-body">
+              <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column align-items-center">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-1" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <div class="d-none d-lg-block" data-aos="zoom-in">
+        <p id="descripcionProductoEscritorio" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-none d-md-block d-lg-none" data-aos="zoom-in">
+        <p id="descripcionProductoTablet" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-sm-block d-md-none" data-aos="zoom-in">
+        <p id="descripcionProductoMovil" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoEscritorio">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal"
+        data-bs-target="#" data-aos="zoom-in">
+        <b id="añadirCarritoTablet">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoMovil">Añadir al carrito</b>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" id="ventanaModal">
+            <div id="ventana_modal_titulo_01" class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Soporte para teléfonos de Spider-Man (Clásico)</h5>
+              <button type="button" class="btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="ventana_modal_foto_01" class="modal-body">
+              <img class="img-fluid rounded-5" src="images/impresion_premio_02.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column align-items-center">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-3" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <button type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#modal"
+        data-aos="zoom-in">
+        <img class="img-fluid rounded-1" src="images/impresion_premio_02.png" alt="">
+      </button>
+
+      <div class="d-none d-lg-block" data-aos="zoom-in">
+        <p id="descripcionProductoEscritorio" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-none d-md-block d-lg-none" data-aos="zoom-in">
+        <p id="descripcionProductoTablet" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <div class="d-sm-block d-md-none" data-aos="zoom-in">
+        <p id="descripcionProductoMovil" class="rounded-2 text-center"><b>Soporte para teléfonos de Spider-Man
+            (Clásico)</b>
+        </p>
+      </div>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoEscritorio">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-none d-md-block d-lg-none" data-bs-toggle="modal"
+        data-bs-target="#" data-aos="zoom-in">
+        <b id="añadirCarritoTablet">Añadir al carrito</b>
+      </button>
+
+      <button id="botonCarrito" type="button" class="btn d-sm-block d-md-none" data-bs-toggle="modal" data-bs-target="#"
+        data-aos="zoom-in">
+        <b id="añadirCarritoMovil">Añadir al carrito</b>
       </button>
 
       <!-- Modal -->
