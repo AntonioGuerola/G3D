@@ -1,0 +1,65 @@
+#body{
+    background-color: #000080;
+}
+
+.container-fluid{
+    justify-content: normal !important;
+    flex-wrap: wrap;
+}
+
+.secciones{
+    flex-direction: column;
+}
+
+footer{
+    margin-top: 3%;
+}
+
+#botonCarrito{
+    color: #000080;
+    background-color: #FFFF00;
+}
+
+#barraNavegacion{
+    background-color: #FFFF00;
+}
+
+#botonBusqueda{
+    color: #FFFF00;
+    background-color: #000080;
+}
+
+#text_navbar{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#text_menu{
+    margin:0px;
+}
+
+#boton_burguer{
+    background: red;
+    border: solid 2px black;
+}
+
+#burguer_01{
+    background-color: #FFFF00;
+    color: white;
+}
+
+#burguer_02{
+    background-color: #FFFF00;
+    color: white;
+}
+
+#titulo_burguer{
+    color: white;
+    font-size: 25px;
+}
+
+#link_burguer{
+    color: white;
+    font-size: 20px;
+}
