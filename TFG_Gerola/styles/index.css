@@ -31,17 +31,17 @@ footer{
 
 #descripcionProductoEscritorio{
     background-color: white;
-    font-size: large;
+    font-size: medium;
 }
 
 #descripcionProductoTablet{
     background-color: white;
-    font-size: medium;
+    font-size: small;
 }
 
 #descripcionProductoMovil{
     background-color: white;
-    font-size: small;
+    font-size: x-small;
 }
 
 #ventanaModal{
