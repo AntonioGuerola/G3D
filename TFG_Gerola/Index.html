@@ -17,17 +17,23 @@
 
   <nav class="navbar h-auto d-md-none" id="barraNavegacion">
     <div class="container-fluid justify-content-center">
-      <div class="row">
-        <a class="col-5 navbar-brand" href="index.html">
-          <img src="images/LogoG3DMedio.png" alt="" height="60">
-        </a>
-        <button id="boton_burguer" class="col-2 navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="col-2 navbar-brand" href="#">
-          <img src="images/carrito-de-compras.png" alt="" height="30">
-        </a>
+      <div id="navbarBurguer" class="row align-items-center">
+        <div class="col-2 text-center">
+          <button id="boton_burguer" class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-8 text-center">
+          <a class="navbar-brand m-0" href="index.html">
+            <img src="images/LogoG3DMedio.png" alt="" height="60">
+          </a>
+        </div>
+        <div class="col-2 text-end">
+          <a class="navbar-brand m-0" href="#">
+            <img src="images/carrito-de-compras.png" alt="" height="30">
+          </a>
+        </div>
         <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div id="burguer_01" class="offcanvas-header">
@@ -738,40 +744,72 @@
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterEscritorio"><b>Rebajas</b></p>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Black Friday</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Navidad</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Cursos</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Filamentos</p></a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Black Friday</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Navidad</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Cursos</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Filamentos</p>
+            </a></li>
         </ul>
       </div>
 
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterEscritorio"><b>Catálgo</b></p>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Marvel</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">DC</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Harry Potter</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Navidad</p></a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Marvel</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">DC</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Harry Potter</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Navidad</p>
+            </a></li>
         </ul>
       </div>
 
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterEscritorio"><b>Contacto</b></p>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Adolfo Darhan 19, Fernán Núñez (Córdoba), 14520</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Teléfono (Antonio): +34 643 01 39 99</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">antonioguerolacrespo@gmail.com</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Instagram: guerolas_3d</p></a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Adolfo Darhan 19, Fernán Núñez (Córdoba)</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Teléfono (Antonio): +34 643 01 39 99</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">antonioguerolacrespo@gmail.com</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Instagram: guerolas_3d</p>
+            </a></li>
         </ul>
       </div>
 
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterEscritorio"><b>Aspectos Legales</b></p>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Área legal</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Cookies</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Condiciones de uso y venta</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterEscritorio">Aviso de privacidad</p></a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Área legal</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Cookies</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Condiciones de uso y venta</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterEscritorio">Aviso de privacidad</p>
+            </a></li>
         </ul>
       </div>
   </footer>
@@ -781,40 +819,72 @@
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterTabletMovil"><b>Rebajas</b></p>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Black Friday</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Navidad</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Cursos</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Filamentos</p></a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Black Friday</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Navidad</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Cursos</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Filamentos</p>
+            </a></li>
         </ul>
       </div>
 
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterTabletMovil"><b>Catálgo</b></p>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Marvel</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">DC</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Harry Potter</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Navidad</p></a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Marvel</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">DC</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Harry Potter</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Navidad</p>
+            </a></li>
         </ul>
       </div>
 
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterTabletMovil"><b>Contacto</b></p>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Adolfo Darhan 19, Fernán Núñez (Córdoba), 14520</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Teléfono (Antonio): +34 643 01 39 99</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">antonioguerolacrespo@gmail.com</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Instagram: guerolas_3d</p></a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Adolfo Darhan 19, Fernán Núñez (Córdoba)</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Teléfono (Antonio): +34 643 01 39 99</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">antonioguerolacrespo@gmail.com</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Instagram: guerolas_3d</p>
+            </a></li>
         </ul>
       </div>
 
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterTabletMovil"><b>Aspectos Legales</b></p>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Área legal</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Cookies</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Condiciones de uso y venta</p></a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><p id="textFooterTabletMovil">Aviso de privacidad</p></a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Área legal</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Cookies</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Condiciones de uso y venta</p>
+            </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <p id="textFooterTabletMovil">Aviso de privacidad</p>
+            </a></li>
         </ul>
       </div>
   </footer>

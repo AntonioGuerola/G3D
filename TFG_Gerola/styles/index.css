@@ -63,7 +63,7 @@ footer{
 
 #text_navbar{
     text-decoration: none;
-    color: white;
+    color: #000080;
     font-size: 20px;
 }
 
@@ -77,21 +77,21 @@ footer{
 
 #burguer_01{
     background-color: #FFFF00;
-    color: white;
+    color: #000080;
 }
 
 #burguer_02{
     background-color: #FFFF00;
-    color: white;
+    color: #000080;
 }
 
 #titulo_burguer{
-    color: white;
+    color: #000080;
     font-size: 25px;
 }
 
 #link_burguer{
-    color: white;
+    color: #000080;
     font-size: 20px;
 }
 
@@ -117,4 +117,8 @@ footer{
     color: #FFFF00;
     margin: 0;
     font-size: xx-small;
+}
+
+#navbarBurguer{
+    width: 100%;
 }
