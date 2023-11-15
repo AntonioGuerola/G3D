@@ -1,124 +1,128 @@
-#body{
+#body {
     background-color: #000080;
 }
 
-.container-fluid{
+.container-fluid {
     justify-content: normal !important;
     flex-wrap: wrap;
 }
 
-.secciones{
+.secciones {
     flex-direction: column;
 }
 
-footer{
+footer {
     margin-top: 3%;
 }
 
-#botonCarrito{
+#botonCarrito {
     color: #000080;
     background-color: #FFFF00;
 }
 
-#barraNavegacion{
+#barraNavegacion {
     background-color: #FFFF00;
 }
 
-#botonBusqueda{
+#botonBusqueda {
     color: #FFFF00;
     background-color: #000080;
 }
 
-#descripcionProductoEscritorio{
+#descripcionProductoEscritorio {
     background-color: white;
     font-size: medium;
 }
 
-#descripcionProductoTablet{
+#descripcionProductoTablet {
     background-color: white;
     font-size: small;
 }
 
-#descripcionProductoMovil{
+#descripcionProductoMovil {
     background-color: white;
     font-size: xx-small;
 }
 
-#añadirCarritoEscritorio{
+#añadirCarritoEscritorio {
     font-size: medium;
 }
 
-#añadirCarritoTablet{
+#añadirCarritoTablet {
     font-size: small;
 }
 
-#añadirCarritoMovil{
+#añadirCarritoMovil {
     font-size: xx-small;
 }
 
-#ventanaModal{
+#ventanaModal {
     background-color: #000080;
     color: #FFFF00;
 }
 
-#text_navbar{
+#text_navbar {
     text-decoration: none;
     color: #000080;
     font-size: 20px;
 }
 
-#text_menu{
-    margin:0px;
+#text_menu {
+    margin: 0px;
 }
 
-#boton_burguer{
-    border: solid 2px #000080;
+#boton_burguer_01 {
+    border: solid 2px #000080;  
 }
 
-#burguer_01{
+#boton_burguer_02 {
+    border: solid 1px #000080;
+}
+
+#burguer_01 {
     background-color: #FFFF00;
     color: #000080;
 }
 
-#burguer_02{
+#burguer_02 {
     background-color: #FFFF00;
     color: #000080;
 }
 
-#titulo_burguer{
+#titulo_burguer {
     color: #000080;
     font-size: 25px;
 }
 
-#link_burguer{
+#link_burguer {
     color: #000080;
     font-size: 20px;
 }
 
-#tituloFooterEscritorio{
+#tituloFooterEscritorio {
     color: #FFFF00;
     margin: 0;
     font-size: medium;
 }
 
-#textFooterEscritorio{
+#textFooterEscritorio {
     color: #FFFF00;
     margin: 0;
     font-size: small;
 }
 
-#tituloFooterTabletMovil{
+#tituloFooterTabletMovil {
     color: #FFFF00;
     margin: 0;
     font-size: x-small;
 }
 
-#textFooterTabletMovil{
+#textFooterTabletMovil {
     color: #FFFF00;
     margin: 0;
     font-size: xx-small;
 }
 
-#navbarBurguer{
+#navbarBurguer {
     width: 100%;
 }

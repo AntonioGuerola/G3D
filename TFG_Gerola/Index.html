@@ -18,46 +18,58 @@
   <nav class="navbar h-auto d-md-none" id="barraNavegacion">
     <div class="container-fluid justify-content-center">
       <div id="navbarBurguer" class="row align-items-center">
-        <div class="col-2 text-center">
-          <button id="boton_burguer" class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+        <div class="col-2 text-center d-none d-sm-block d-md-none">
+          <button id="boton_burguer_01" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <div class="col-8 text-center">
+        <div class="col-2 text-center d-xs-block d-sm-none">
+          <button id="boton_burguer_02" class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-8 text-center d-none d-sm-block d-md-none">
           <a class="navbar-brand m-0" href="index.html">
             <img src="images/LogoG3DMedio.png" alt="" height="60">
           </a>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-8 text-center d-xs-block d-sm-none">
+          <a class="navbar-brand m-0" href="index.html">
+            <img src="images/LogoG3DMedio.png" alt="" height="30">
+          </a>
+        </div>
+        <div class="col-2 text-end d-none d-sm-block d-md-none">
           <a class="navbar-brand m-0" href="#">
             <img src="images/carrito-de-compras.png" alt="" height="30">
           </a>
         </div>
-        <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar"
+        <div class="col-2 text-end d-xs-block d-sm-none">
+          <a class="navbar-brand m-0" href="#">
+            <img src="images/carrito-de-compras.png" alt="" height="15">
+          </a>
+        </div>
+        <div class="container-fluid offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
-          <div id="burguer_01" class="offcanvas-header">
-            <a href="index.html">
+          <div id="burguer_01" class="row offcanvas-header">
+            <a href="index.html" class="col-11 text-center">
               <img src="images/LogoG3DMedio.png" alt="" height="60">
             </a>
-            <button type="button" class="btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close-white col-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div id="burguer_02" class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <div id="burguer_02" class="offcanvas-body row">
+            <ul class="navbar-nav flex-grow-1 pe-3">
               <li class="nav-item">
-                <a href="contacto.html" id="titulo_burguer" class="nav-link active">Contacto</a>
+                <a id="link_burguer" class="nav-link active"
+                  href="#">Rebajas</a>
               </li>
               <li class="nav-item">
                 <a id="link_burguer" class="nav-link active"
-                  href="https://twitter.com/a_guerola02?t=jyP3PinUzXXG9KNNgMY_NQ&s=08">Twitter</a>
+                  href="https://instagram.com/guerolas_3d?igshid=YmMyMTA2M2Y=">Catálgo</a>
               </li>
               <li class="nav-item">
-                <a id="link_burguer" class="nav-link active"
-                  href="https://instagram.com/guerolas_3d?igshid=YmMyMTA2M2Y=">Instagram</a>
-              </li>
-              <li class="nav-item">
-                <a id="link_burguer" class="nav-link active" href="mailto:antonioguerolacrespo@gmail.com">Correo:
-                  antonioguerolacrespo@gmail.com</a>
+                <a id="link_burguer" class="nav-link active" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -68,7 +80,7 @@
 
   <nav class="navbar h-auto d-none d-md-block" id="barraNavegacion">
     <div class="container-fluid justify-content-center">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="images/LogoG3DMedio.png" alt="" height="60">
       </a>
       <form class="d-flex col-2">
@@ -739,7 +751,7 @@
 
   </div>
 
-  <footer class="d-flex justify-content-center d-none d-md-block">
+  <footer class="d-flex justify-content-center d-none d-md-block mb-3">
     <div class="d-flex justify-content-around w-100">
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterEscritorio"><b>Rebajas</b></p>
@@ -814,11 +826,11 @@
       </div>
   </footer>
 
-  <footer class="d-flex justify-content-center d-md-none">
+  <footer class="d-flex justify-content-center d-md-none mb-3">
     <div class="d-flex justify-content-around w-100">
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterTabletMovil"><b>Rebajas</b></p>
-        <ul class="nav flex-column">
+        <ul class="nav flex-column d-none d-sm-block">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
               <p id="textFooterTabletMovil">Black Friday</p>
             </a></li>
@@ -836,7 +848,7 @@
 
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterTabletMovil"><b>Catálgo</b></p>
-        <ul class="nav flex-column">
+        <ul class="nav flex-column d-none d-sm-block">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
               <p id="textFooterTabletMovil">Marvel</p>
             </a></li>
@@ -854,7 +866,7 @@
 
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterTabletMovil"><b>Contacto</b></p>
-        <ul class="nav flex-column">
+        <ul class="nav flex-column d-none d-sm-block">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
               <p id="textFooterTabletMovil">Adolfo Darhan 19, Fernán Núñez (Córdoba)</p>
             </a></li>
@@ -872,7 +884,7 @@
 
       <div class="secciones d-flex col-3 justify-content-center align-items-center">
         <p id="tituloFooterTabletMovil"><b>Aspectos Legales</b></p>
-        <ul class="nav flex-column">
+        <ul class="nav flex-column d-none d-sm-block">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
               <p id="textFooterTabletMovil">Área legal</p>
             </a></li>
